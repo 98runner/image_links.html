@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 10px;
+        }
+        .gallery img {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to Image Links! Here's an image related to technology:</p>
+        <img src="./computer.jpeg" alt="computer"></a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out these images related to nature:</p>
+        <div class="gallery">
+            <img src="./peacock on ground.jpeg" alt="peacock"></a>
+            <img src="./pink roses.jpeg" alt="pink roses"></a>
+            <img src="./lavenders.jpeg" alt="lavenders"></a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Here are some delicious food items:</p>
+        <ul>
+            <li><img src="./cake.jpeg" alt="cake">Food Item 1</a></li>
+            <li><img src="./pancakes.jpeg" alt="pancakes">Food Item 2</a></li>
+            <li><img src="./fries.jpeg" alt="fries">Food Item 3</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Image Links</p>
+    </footer>
+</body>
+</html>
